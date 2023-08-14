@@ -1,0 +1,384 @@
+*{
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+.header{
+    height: 100vh;
+}
+
+
+.nav_bar{
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.logo_nav{
+    height: 60px;
+}
+
+.bar{
+    display: flex;
+}
+
+.logo_nav, .bar{
+    margin: 0px 350px;
+}
+
+.img_nav{
+    display: none;
+}
+
+.text_nav{
+    color: #000;
+    font-family: Heebo;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    margin: 0px 25px;
+}
+
+.text_nav:hover{
+    text-decoration: underline;
+    transition: 0.8s;
+}
+
+.about_header{
+    margin-left: 148px;
+    margin-top: 120px;
+
+}
+
+.title_page{
+    width: 490px;
+    color: var(--dark-color, #21243D);
+    font-family: Heebo;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.description{
+    width: 497px;
+    color: var(--dark-color, #21243D);
+    font-family: „Roboto Slab”, serif;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.title_page, .description{
+    margin: 10px 0px;
+}
+
+.cv{
+    margin-top:50px;
+    height: 47px;
+    width: 208px;
+    border-radius: 2px;
+    background: var(--primary, #FF6464);
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-family: „Roboto Slab”, serif;
+    font-weight: 500;
+}
+
+.img_header{
+    position: absolute;
+    margin-left: 759px;
+    height: 343px;
+    
+}
+
+.project {
+    flex-wrap: wrap;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container_project {
+    width: 80%;
+}
+
+.title_project{
+    color: var(--dark-color, #21243D);
+    font-family: Heebo;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px; /* 272.727% */
+}
+
+.box_project {
+    display: flex;
+    margin: 14px 0px 0px 0px;
+}
+
+.project_img {
+    height: 180px;
+    width: auto;
+    width: 280px;
+}
+
+.block_detail{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title_project {
+    color: var(--dark-color, #21243D);
+    font-family: Heebo;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.year {
+    height: 25px;
+    width: 62px;
+    background: #142850;
+    font-size: 18px;
+    border-radius: 16px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #FFF;
+}
+
+.detail_project{
+    color: var(--dark-color, #21243D);
+    font-family: Heebo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 820px;
+}
+
+.skils{
+    margin-top: 25px;
+    flex-wrap: wrap;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.skils_container {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box_skils {
+    height: 200px;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 100px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: 5px;
+}
+
+.progres {
+    color: #000;
+    font-family: Hannari;
+    font-size: 29px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.contact{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.img_contact{
+    margin: 10px;
+    margin-top: 50px;
+}
+
+.author{
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+    .logo_nav, .bar {
+        margin: 0px 222px;
+    }
+    .nav_bar {
+        width: 100%;
+    }
+    .about_header {
+        margin-left: 75px;
+        margin-top: 120px;
+    }
+    .img_header {
+        margin-left: 542px;
+    }
+    .detail_project {
+        width: 618px;
+        font-size: 15px;
+    }
+    .container_project {
+        width: 86%;
+    }
+
+    .skils_container {
+        width: 86%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .nav_bar {
+        width: 128%;
+    }
+    .logo_nav, .bar {
+        margin: 0px 200px;
+    }
+    .img_header {
+        height: 300px;
+    }
+    .detail_project {
+        width: 529px;
+        font-size: 13px;
+    }
+    .skils {
+        width: 126%;
+    }
+    .skils_container {
+        width: 90%;
+    }
+    .contact {
+        width: 122%;
+    }
+    .author {
+        width: 120%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .bar{
+        display: none;
+    }
+    .nav_bar {
+        width: 47%;
+    }
+    .img_header{
+        display: none;
+    }
+    .about_header {
+        margin-top: 76px;
+    }
+    .box_project {
+        flex-direction: column;
+    }
+    .detail_project {
+        width: 512px;
+        font-size: 17px;
+    }
+    .project_img {
+        height: 323px;
+        width: 512px;
+    }
+    .about_header {
+        margin-left: 30px;
+    }
+    .img_nav {
+        display: flex;
+        height: 70px;
+        margin-top: 7px;
+        margin-left: 765px;
+        position: absolute;
+    }
+    .logo_nav {
+        margin-left: 66px;
+    }
+    .container_project {
+        width: 95%;
+    }
+    .about_header {
+        margin-left: 18px;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .detail_project {
+        width: 479px;
+    }
+    .project_img {
+        height: 285px;
+        width: 497px;
+    }
+    .skils {
+        width: 136%;
+    }
+    .author {
+        width: 135%;
+    }
+    .description {
+        width: 477px;
+    }
+    .img_nav {
+        margin-left: 750px;
+    }
+    .logo_nav {
+        margin-left: 95px;
+    }
+    .contact {
+        width: 132%;
+    }
+}
+
+
+@media screen and (max-width: 320px){
+    .detail_project {
+        width: 479px;
+    }
+    .project_img {
+        width: 489px;
+    }
+    .skils {
+        width: 136%;
+    }
+    .author {
+        width: 158%;
+    }
+    .description {
+        width: 477px;
+    }
+    .img_nav {
+        margin-left: 750px;
+    }
+    .logo_nav {
+        margin-left: 120px;
+    }
+    .contact {
+        width: 151%;
+    }
+    .skils_container {
+        width: inherit;
+    }
+}
+
+
